@@ -1,0 +1,1 @@
+GRANT FLUSH_TABLES ON *.* TO changeme;
