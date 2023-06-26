@@ -27,11 +27,11 @@ $webroot_dir = $root_dir . '/web';
 
 /**
  * Use Dotenv to set required environment variables and load .env file in root
- * .env.local will override .env if it exists
+ * .env will override .env if it exists
  */
 if (file_exists($root_dir . '/.env')) {
-    $env_files = file_exists($root_dir . '/.env.local')
-        ? ['.env', '.env.local']
+    $env_files = file_exists($root_dir . '/.env')
+        ? ['.env', '.env']
         : ['.env'];
 
     $dotenv = Dotenv\Dotenv::createUnsafeImmutable($root_dir, $env_files, false);
