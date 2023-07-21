@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa41fcc193a5527eafc58c520e3a7c19",
+    "content-hash": "e96312cfe6eb99e9074a3d6bd6880942",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,16 +153,16 @@
         },
         {
             "name": "elementor/elementor-pro",
-            "version": "3.13.2",
+            "version": "3.14.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:elementor/elementor-pro.git",
-                "reference": "97a3fa973e0ddd29cdff33d32ecd6b43cfeb4d58"
+                "reference": "60d0d4c97b8307e3095b627296b0c9feb9d37586"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.elementor.com/download/3.13.2",
-                "reference": "97a3fa973e0ddd29cdff33d32ecd6b43cfeb4d58",
+                "url": "https://composer.elementor.com/download/3.14.1",
+                "reference": "60d0d4c97b8307e3095b627296b0c9feb9d37586",
                 "shasum": ""
             },
             "require-dev": {
@@ -178,7 +178,7 @@
             },
             "scripts": {
                 "test": [
-                    "phpunit"
+                    "phpunit --testsuite elementor-pro"
                 ],
                 "test:woocommerce": [
                     "phpunit --testsuite woocommerce"
@@ -197,9 +197,9 @@
             ],
             "description": "WordPress website builder, with no limits of design. A website builder that delivers high-end page designs and advanced capabilities, never before seen on WordPress.",
             "support": {
-                "source": "https://github.com/elementor/elementor-pro/tree/3.13.2"
+                "source": "https://github.com/elementor/elementor-pro/tree/3.14.1"
             },
-            "time": "2023-05-23T06:49:31+00:00"
+            "time": "2023-06-26T10:17:58+00:00"
         },
         {
             "name": "graham-campbell/result-type",
