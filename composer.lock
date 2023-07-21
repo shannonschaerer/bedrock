@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8cb223ac0d1d1ba5189cb2ff2dc29e9b",
+    "content-hash": "aa41fcc193a5527eafc58c520e3a7c19",
     "packages": [
         {
             "name": "composer/installers",
@@ -150,6 +150,56 @@
                 }
             ],
             "time": "2022-08-20T06:45:11+00:00"
+        },
+        {
+            "name": "elementor/elementor-pro",
+            "version": "3.13.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:elementor/elementor-pro.git",
+                "reference": "97a3fa973e0ddd29cdff33d32ecd6b43cfeb4d58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.elementor.com/download/3.13.2",
+                "reference": "97a3fa973e0ddd29cdff33d32ecd6b43cfeb4d58",
+                "shasum": ""
+            },
+            "require-dev": {
+                "inewlegend/elementor-editor-testing": "0.0.2",
+                "phpunit/phpunit": "^5|^6|^7",
+                "yoast/phpunit-polyfills": "^1.0.1"
+            },
+            "type": "wordpress-plugin",
+            "autoload-dev": {
+                "classmap": [
+                    "tests/phpunit/mock/"
+                ]
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ],
+                "test:woocommerce": [
+                    "phpunit --testsuite woocommerce"
+                ],
+                "test:install": [
+                    "bash ./bin/install-wp-tests-local.sh"
+                ]
+            },
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Elementor team"
+                }
+            ],
+            "description": "WordPress website builder, with no limits of design. A website builder that delivers high-end page designs and advanced capabilities, never before seen on WordPress.",
+            "support": {
+                "source": "https://github.com/elementor/elementor-pro/tree/3.13.2"
+            },
+            "time": "2023-05-23T06:49:31+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -1095,6 +1145,24 @@
             "time": "2022-10-16T01:01:54+00:00"
         },
         {
+            "name": "wpackagist-plugin/elementor",
+            "version": "3.14.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/elementor/",
+                "reference": "tags/3.14.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/elementor.3.14.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/elementor/"
+        },
+        {
             "name": "wpackagist-theme/twentytwentythree",
             "version": "1.1",
             "source": {
@@ -1111,6 +1179,21 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/twentytwentythree/"
+        },
+        {
+            "name": "wpengine/advanced-custom-fields-pro",
+            "version": "6.1.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://connect.advancedcustomfields.com/v2/plugins/composer_download?p=pro&t=6.1.7"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "replace": {
+                "wpackagist-plugin/advanced-custom-fields": "self.version"
+            },
+            "type": "wordpress-plugin"
         }
     ],
     "packages-dev": [

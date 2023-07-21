@@ -1,0 +1,3 @@
+[submodule "web/app/themes/hello-theme-child"]
+	path = web/app/themes/hello-theme-child
+	url = https://github.com/elementor/hello-theme-child.git

@@ -1,3 +1,6 @@
+# IDE
+.idea/
+
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
@@ -25,3 +28,6 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+
+# Docker
+docker/nginx/certs/*

@@ -1,0 +1,2 @@
+# define your crontabs. docker needs to restart
+# * * * * * /usr/bin/php8.2 /application/craft <command>
